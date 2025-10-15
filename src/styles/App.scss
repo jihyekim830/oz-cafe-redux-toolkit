@@ -15,6 +15,11 @@ ul {
   padding: 10px;
 }
 
+.empty-state {
+  text-align: center;
+  margin: 80px;
+}
+
 .menu {
   display: flex;
   gap: 10px;
@@ -34,6 +39,7 @@ ul {
   gap: 8px;
 
   img {
+    width: 50px;
     height: 60%;
     object-fit: contain;
   }
@@ -63,11 +69,11 @@ a {
 
 .modal-backdrop {
   position: fixed;
-  background-color: rgba(0,0,0,0.2);
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: grid;
   place-items: center;
 
@@ -77,43 +83,43 @@ a {
     border-radius: 10px;
     padding: 20px;
     background-color: white;
-      .modal-item {
-        display: flex;
-        align-items: center;
-        img {
-          height: 120px;
-          margin: 10px;
-        }
+    .modal-item {
+      display: flex;
+      align-items: center;
+      img {
+        height: 120px;
+        margin: 10px;
       }
-      .options {
-        display: flex;
-        gap: 15px;
-    
-        .option {
-          font-size: 1rem;
-          font-weight: 600;
-          margin-bottom: 10px;
-      
-          li {
-            font-weight: 300;
-            font-size: 0.8rem;
-          }
-        }
-      }
-      .submit {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    }
+    .options {
+      display: flex;
+      gap: 15px;
 
-        input {
-          width: 50px;
-          margin: 10px;
-        }
+      .option {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
 
-        button {
-          padding: 10px;
+        li {
+          font-weight: 300;
+          font-size: 0.8rem;
         }
       }
+    }
+    .submit {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 50px;
+        margin: 10px;
+      }
+
+      button {
+        padding: 10px;
+      }
+    }
   }
 }
 
@@ -122,10 +128,6 @@ a {
   border-radius: 10px;
   padding: 10px;
 
-  .no-item {
-    padding: 20px;
-    text-align: center;
-  }
   .cart-item {
     display: flex;
     position: relative;
@@ -137,6 +139,9 @@ a {
       border: none;
     }
     .cart-item-info {
+      img {
+        height: 100px;
+      }
       div {
         font-size: 1.1rem;
         font-weight: 600;
